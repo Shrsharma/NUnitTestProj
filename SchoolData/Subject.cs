@@ -4,6 +4,8 @@ using System.Text;
 
 namespace SchoolData
 {
+
+
     struct Subject
     {
         public string Name;

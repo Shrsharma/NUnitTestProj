@@ -9,16 +9,13 @@ namespace SchoolData
     
     public class Student
     {
+
         public string Name { get; set; }
         public string ClassAndSection { get; set; }
 
         public static List<Student> students = new List<Student>();
         public static string StudAddData()
         {
-            //Console.WriteLine("Enter student name:");
-            //string nme = Console.ReadLine();
-            //Console.WriteLine("Enter student Class and Section:");
-            //string clssndsctn = Console.ReadLine();
             Student s1 = new Student()
             {
                 Name = "Shruti",
@@ -42,6 +39,11 @@ namespace SchoolData
                 removeSuccess = students.Remove(findStudent);
             }
             return removeSuccess;
+        }
+
+        public static implicit operator Student(List<Student> v)
+        {
+            throw new NotImplementedException();
         }
     }
 

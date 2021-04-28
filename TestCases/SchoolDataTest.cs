@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Moq;
+using NUnit.Framework;
 using SchoolData;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace TestCases
     [TestFixture()]
     public class SchoolDataTest
     {
+
         [Test()]
         public void AddStudentTest()
         {
@@ -79,5 +81,7 @@ namespace TestCases
 
             Assert.IsTrue(result.Count == 1);
         }
+
+
     }
 }
